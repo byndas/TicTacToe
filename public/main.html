@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Tic-Tac-Toe</title>
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <link href="main.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <flexWrapper>
+      <flexCenter>
+      <choice>
+        <button id="X">X</button>
+        <span>OR</span>
+        <button id="O">O</button>
+      </choice>
+
+      <flexBoard>
+        <column>
+          <S1 class="square A D H"></S1>
+          <S2 class="square A E"></S2>
+          <S3 class="square A F G"></S3>
+        </column>
+        <column>
+          <S4 class="square B D"></S4>
+          <S5 class="square B E G H"></S5>
+          <S6 class="square B F"></S6>
+        </column>
+        <column>
+          <S7 class="square C D G"></S7>
+          <S8 class="square C E"></S8>
+          <S9 class="square C F H"></S9>
+        </column>
+      </flexBoard>
+
+      <flexBox>
+        <score>
+          <human>
+            ME: <span></span>
+          </human>
+          <pc>
+            PC: <span> </span>
+          </pc>
+        </score>
+      </flexBox>
+    </flexCenter>
+    </flexWrapper>
+
+    <script type="text/javascript" src="jquery-3.1.1.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>

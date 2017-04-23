@@ -1,0 +1,203 @@
+/* reset browser styles */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1.2;
+  font-size: 62.5%;
+  font: serif;
+}
+ol {
+  padding-left: 1.4em;
+  list-style: decimal;
+}
+ul {
+  padding-left: 1.4em;
+  list-style: square;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* end reset browser styles */
+
+html, body {
+  height: 100%;
+  font-family: sans-serif;
+}
+flexWrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  background-color: rgb(57, 56, 74);
+}
+flexCenter {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 50vw;
+  opacity: .85;
+}
+choice {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  font-family: sans-serif;
+  padding: 20px 0;
+  font-size: 6vw;
+}
+flexBox {
+  display: flex;
+  flex-direction: column;
+}
+score {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 6vw;
+  padding: 20px 0;
+  font-weight: bold;
+  color: #13192d;
+  cursor: default;
+}
+human {
+  color: #0f609f;
+}
+pc {
+  color: rgb(50,119,91);
+}
+button {
+  background-color: rgb(57, 56, 74);
+  font-size: 6vw;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: rgb(178, 231, 250);
+  border-color: snow;
+  border-width: 1vw;
+  border-radius: 1vw;
+  cursor: pointer;
+  border-style: inset outset;
+}
+button:focus {
+  outline: none;
+}
+flexBoard {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+column {
+  display: flex;
+  flex-direction: column;
+}
+.square {
+  display: flex;
+  flex: 1;
+  background-color: rgb(178, 231, 250);
+  height: 7vw;
+  width: 7vw;
+  border-color: rgb(57, 56, 74);
+  border-width: 1vw;
+  border-radius: 1.5vw;
+  border-style: outset inset inset outset;
+  cursor: pointer;
+}
+S1 {
+  border-top-left-radius: 1vw;
+}
+S3 {
+  border-bottom-left-radius: 1vw;
+}
+S7 {
+  border-top-right-radius: 1vw;
+}
+S9 {
+  border-bottom-right-radius: 1vw;
+}
+.A {
+  border-left-color: rgb(178, 231, 250);
+}
+.C {
+  border-right-color: rgb(178, 231, 250);
+}
+.D {
+  border-top-color: rgb(178, 231, 250);
+}
+.F {
+  border-bottom-color: rgb(178, 231, 250);
+}
+.victor {
+  background-color: snow;
+}
+.tie {
+  background-color: snow;
+  opacity: .5;
+}
+.off {
+  pointer-events: none;
+}
+choice span {
+  align-self: center;
+  font-size: 6vw;
+  margin: 0 .75vw;
+  font-family: sans-serif;
+  color: rgb(178, 231, 250);
+  cursor: default;
+}
+.square span {
+  font-size: 6vw;
+  margin: auto;
+  color: rgb(50,119,91);
+  font-weight: bold;
+}
+score span {
+  color: rgb(178, 231, 250);
+}
+.removePointer {
+  pointer-events: none;
+}
+.square:hover, button:hover {
+  opacity: .75;
+}
+.highlight1 {
+  color: #0f609f;
+}
+.highlight2 {
+  color: rgb(50,119,91);
+}
+
+/*@keyframes levelModal {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.showsLevel {
+   animation: levelModal 1s alternate 2;
+}*/
+
+/*
+@media (max-width: 480px) {  // phone widths
+  .flexbox0 {
+    max-width: 250px;
+    height: 250px;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) { // tablet widths
+  .flexbox0 {
+    max-width: 500px;
+    height: 500px;
+  }
+}*/
